@@ -43,7 +43,6 @@ public class OkHttpCallInstrumentation extends TypeInstrumentation {
     @Override
     public List<String> adviceClassNames() {
         return asList(
-                "io.arex.inst.httpclient.okhttp.v3.OkHttpCallInstrumentation$ExecuteAdvice",
                 "io.arex.inst.httpclient.okhttp.v3.OkHttpClientAdapter",
                 "io.arex.inst.httpclient.common.HttpClientAdapter",
                 "io.arex.inst.httpclient.common.HttpResponseWrapper",

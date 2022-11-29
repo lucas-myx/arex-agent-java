@@ -30,6 +30,7 @@ public class ContextManager {
      * agent will call this method
      */
     public static ArexContext currentContext(boolean createIfAbsent, String caseId) {
+        System.out.println("ContextManager.ClassLoader="+ContextManager.class.getClassLoader());
         // replay scene
         if (StringUtil.isNotEmpty(caseId)) {
             String replayId = TraceContextManager.get(createIfAbsent);
